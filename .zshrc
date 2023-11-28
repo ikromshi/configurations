@@ -119,10 +119,10 @@ __conda_setup="$('/Users/inumonov/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /de
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/inumonov/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/inumonov/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/username/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/username/anaconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/inumonov/anaconda3/bin:$PATH"
+        export PATH="/Users/username/anaconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
